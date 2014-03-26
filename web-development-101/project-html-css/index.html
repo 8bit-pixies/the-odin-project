@@ -11,6 +11,32 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <style>
+            .header ul {
+                list-style-type:none;
+                margin:10;
+                padding:10;
+            }
+            
+            .header li {
+                display:inline;
+            }
+            
+            .header a {
+                text-decoration:none;
+            }
+            
+            #fleft {
+                position: fixed;
+                left:0;
+            }
+            
+            #fright {
+                position: fixed;
+                right: 0;
+            }
+        </style>
+        
         <script src="js/vendor/modernizr-2.7.1.min.js"></script>
     </head>
     <body>
@@ -19,6 +45,16 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
+        <div class="header" align="right">
+            <ul>
+                <li><a href="/">+You</a></li>
+                <li><a href="/">Gmail</a></li>
+                <li><a href="/">Images</a></li>
+                <li><a href="/">Apps</a></li>
+                <li><a href="/">your.name@gmail.com</a></li>
+            </ul>
+        </div>
+        
         <div class="container" align="center"> 
             <!-- make sure the logo is centred -->
             <br>
@@ -32,6 +68,11 @@
                 <td><button>I'm Feeling Lucky</button></td>
             </table>
                 
+        </div>
+        
+        <div class="footer">
+            <span id="fleft">Advertising Business About</span>
+            <span id="fright">Privacy and Terms Settings Google.com</span>
         </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
