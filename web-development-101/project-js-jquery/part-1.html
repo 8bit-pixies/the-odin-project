@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+
+        <style>
+        .square {
+            width: 25px;
+            height: 25px;
+            background: black;
+            margin:1px;
+            float:left;
+        }
+        
+        .new_row {
+            display: block;
+            clear: both;
+        }
+        
+        .redSquare {
+            width: 25px;
+            height: 25px;
+            background: red;
+            margin:1px;
+            float:left;
+        }
+        </style>
+        
+        <script src="js/vendor/modernizr-2.7.1.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div id="container"></div>
+        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        
+<script>
+for (j=0; j<16; j++) {
+  for (i=0; i<16; i++) {
+    // keep track of which square
+    document.getElementById("container").innerHTML += '<div class="square"></div>';
+  }
+    document.getElementById("container").innerHTML += '<div class="new_row"></div>';
+}
+
+// add hover effect
+$("div.square").hover(function(){
+    $(this).addClass('redSquare')
+})
+</script>
+
+    </body>
+</html>
